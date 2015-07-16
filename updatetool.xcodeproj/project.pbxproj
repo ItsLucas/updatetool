@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A05A9A491B57C4F600A6E3E1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05A9A481B57C4F600A6E3E1 /* main.cpp */; };
+		A05A9A511B57C57F00A6E3E1 /* epkg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05A9A4F1B57C57F00A6E3E1 /* epkg.cpp */; };
+		A05A9A541B57C59A00A6E3E1 /* getos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05A9A521B57C59A00A6E3E1 /* getos.cpp */; };
+		A05A9A571B57CA1800A6E3E1 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05A9A551B57CA1800A6E3E1 /* md5.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		A05A9A451B57C4F600A6E3E1 /* updatetool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = updatetool; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05A9A481B57C4F600A6E3E1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A05A9A4F1B57C57F00A6E3E1 /* epkg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = epkg.cpp; sourceTree = "<group>"; };
+		A05A9A501B57C57F00A6E3E1 /* epkg.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = epkg.hpp; sourceTree = "<group>"; };
+		A05A9A521B57C59A00A6E3E1 /* getos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = getos.cpp; sourceTree = "<group>"; };
+		A05A9A531B57C59A00A6E3E1 /* getos.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = getos.hpp; sourceTree = "<group>"; };
+		A05A9A551B57CA1800A6E3E1 /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = md5.cpp; sourceTree = "<group>"; };
+		A05A9A561B57CA1800A6E3E1 /* md5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = md5.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				A05A9A481B57C4F600A6E3E1 /* main.cpp */,
+				A05A9A4F1B57C57F00A6E3E1 /* epkg.cpp */,
+				A05A9A551B57CA1800A6E3E1 /* md5.cpp */,
+				A05A9A561B57CA1800A6E3E1 /* md5.hpp */,
+				A05A9A501B57C57F00A6E3E1 /* epkg.hpp */,
+				A05A9A521B57C59A00A6E3E1 /* getos.cpp */,
+				A05A9A531B57C59A00A6E3E1 /* getos.hpp */,
 			);
 			path = updatetool;
 			sourceTree = "<group>";
@@ -118,6 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05A9A511B57C57F00A6E3E1 /* epkg.cpp in Sources */,
+				A05A9A541B57C59A00A6E3E1 /* getos.cpp in Sources */,
+				A05A9A571B57CA1800A6E3E1 /* md5.cpp in Sources */,
 				A05A9A491B57C4F600A6E3E1 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
