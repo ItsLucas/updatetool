@@ -8,8 +8,10 @@
 
 #include "epkg.hpp"
 #include "md5.hpp"
+#include "getos.hpp"
+#include "StringBuilder.cpp"
 using namespace std;
-string check_md5(const string &file)
+string cal_md5(const string &file)
 {
     ifstream in(file.c_str(), ios::binary);
     if (!in)
@@ -26,4 +28,49 @@ string check_md5(const string &file)
     }
     in.close();
     return md5.toString();
+}
+void seal_epkg(string directory,string epkg_name)
+{
+    StringBuilder<char> *sb = new StringBuilder<char>();
+    if(getTargetOS()==oswin)
+    {
+        string a = "7za.exe a ";
+        sb->Append(a);
+        sb->Append(epkg_name);
+        string b = " ";
+        sb->Append(directory);
+        string result = sb->ToString();
+        system(result.c_str());
+    }
+    else if(getTargetOS()==osdarwin||getTargetOS()==oslin)
+    {
+        
+        string a = "7za a ";
+        sb->Append(a);
+        sb->Append(epkg_name);
+        string b = " ";
+        sb->Append(directory);
+        string result = sb->ToString();
+        system(result.c_str());
+    }
+}
+void open_epkg(string epkg_path)
+{
+    StringBuilder<char> *sb = new StringBuilder<char>();
+    if(getTargetOS()==oswin)
+    {
+        string a = "7za.exe x ";
+        sb->Append(a);
+        sb->Append(epkg_path);
+        string result = sb->ToString();
+        system(result.c_str());
+}
+    else if(getTargetOS()==osdarwin||getTargetOS()==oslin)
+    {
+        string a = "7za.exe x ";
+        sb->Append(a);
+        sb->Append(epkg_path);
+        string result = sb->ToString();
+        system(result.c_str());
+    }
 }
